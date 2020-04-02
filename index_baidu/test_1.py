@@ -10,10 +10,10 @@ demeid=2
 
 def main():
     if Choose=='news':
-        url='http://insight.baidu.com/base/' + Choose + '/rank/general?pageSize='+str(NUB) + '&source=0&toFixed=1&filterType=1&dateType=20200323~20200329&dimensionid=2&rateType=1000'
+        url='http://insight.baidu.com/base/' + Choose + '/rank/general?pageSize='+str(NUB) + '&source=0&toFixed=1&filterType=1&dateType=20200323~20200329&dimensionid='+str(demeid)+'&rateType=1000'
     elif Choose=='search':
         url='http://insight.baidu.com/base/' + Choose + '/rank/list?pageSize=' + str(
-            NUB) + '&source=0&toFixed=1&filterType=1&dateType=20200323~20200329&dimensionid=11&rateType=1000'
+            NUB) + '&source=0&toFixed=1&filterType=1&dateType=20200323~20200329&dimensionid='+str(demeid)+'&rateType=1000'
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36',
     }
